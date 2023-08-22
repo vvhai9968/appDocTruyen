@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:src="@drawable/anime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="Bắt đầu nào"
+            android:textColor="#223263"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Tạo một tài khoản mới "
+            android:textColor="#9098B1"
+            android:textSize="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/checkFullname"
+            android:layout_width="343dp"
+            android:layout_height="63.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:hint="Full name"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A39B9B"
+            app:endIconMode="clear_text"
+            app:endIconTint="#A39B9B"
+            app:errorEnabled="true"
+            app:hintTextColor="#777676"
+            app:startIconDrawable="@drawable/name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SignUpFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress|textPersonName"
+                android:paddingBottom="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CheckEmail"
+            android:layout_width="343dp"
+            android:layout_height="63.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:hint="Your Email"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A39B9B"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#777676"
+            app:startIconDrawable="@drawable/email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress|textPersonName"
+                android:paddingBottom="15dp"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/checkUser"
+            android:layout_width="343dp"
+            android:layout_height="63.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:hint="Tên Đăng Nhập "
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A39B9B"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#777676"
+            app:startIconDrawable="@drawable/name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SignUpUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress|textPersonName"
+                android:paddingBottom="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CheckPass"
+            android:layout_width="343dp"
+            android:layout_height="63.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:hint="Password"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A39B9B"
+            app:endIconMode="password_toggle"
+
+            app:endIconTint="#9A9897"
+            app:errorEnabled="true"
+            app:helperText="Enter trong pass"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="#F44336"
+            app:hintTextColor="#777676"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SignUpPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/checkPassAgain"
+            android:layout_width="343dp"
+            android:layout_height="63.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="Password Again"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#A39B9B"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#9A9897"
+            app:errorEnabled="true"
+            app:hintTextColor="#777676"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SignUpAgainPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/errSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=" "
+                android:textColor="#FF0000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/errSignUp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text=""
+                android:textColor="#FF0000"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSignUp"
+            android:layout_width="343dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="14dp"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_width="343dp"
+                android:layout_height="48dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="Đăng ký"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản? "
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Đăng nhập"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
